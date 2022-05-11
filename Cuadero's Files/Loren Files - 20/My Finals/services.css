@@ -1,0 +1,218 @@
+body {
+  font-family: 'Raleway', sans-serif;  
+    background: #f1f1f1;
+  margin:0%;
+  margin-top: 0%;
+  
+}
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+.navbar {
+  width: 100%;
+  overflow: auto;
+  position: fixed;
+  height: 6.3%;
+  font-family: 'Raleway', sans-serif;  
+  background-color: rgba(92, 76, 76, 0.424);
+}
+
+.active1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 39%;
+}
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 12.5px;
+
+}
+.text111{
+  color: rgb(163, 112, 1);
+}
+@media screen and (max-width: 800px) {
+  .text0{
+    width: 90%;
+    padding: 0;
+    margin-left: 0%;
+    position: center;
+    margin-top: 0%;
+  }
+}
+.talk5{
+  text-decoration: none;
+  color:rgb(148, 85, 8);
+}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: rgba(252, 194, 4, 0.568);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #00a70e;
+}
+
+}
+@media screen and (max-width: 50px) {
+  .navbar{
+    width:100%;
+    padding: 0px 0px;
+    float: left;
+    margin: 0%;
+    top: 100%;
+  }
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 15px;
+  width: 100%;
+  margin: 0%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  height: 100%;
+  
+}
+.rightcolumn1 {
+  float: right;
+  width:60%;
+  margin-right: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin: 0%;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:rgba(236, 208, 156, 0.418);
+  padding: 20px;
+  margin-top: 0px;
+  height: 100%;
+}
+.card1 {
+  background-color:rgba(236, 208, 156, 0.418);
+  padding: 20px;
+  margin-top: 0%;
+  height: 120%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 25px;
+  text-align: center;
+  background:rgba(66, 61, 61, 0.534);
+  width: 100%;
+  margin-top: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0px;
+}
+.foot{
+    color: orangered;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn1 {
+    width: 100%;
+    padding: 5;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rightcolumn1 {
+    width: 100%;
+    padding: 5px;
+    margin: 3%;
+    margin-left: 55%;
+    margin-right: 2%;
+  }
+@media screen and (max-width: 800px) {
+  .card1{
+    width: 100%;
+    padding: 0;
+    margin-left: 0%;
+    position: center;
+    margin-top: 0%;
+  }
+}
+.text6{
+  text-decoration: none;
+}
+.column1 {
+  float: left;
+  width: 33%;
+  padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text2{
+    font-size: 16px;
+    margin-left: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;  
+    color: rgb(148, 85, 8);
+    text-decoration: none;
+  
+  }
+  p{
+      text-align: justify;
+
+  }
+.text{
+  text-align: justify;
+}
+  h2{
+      color: rgb(156, 88, 4);
+      font-family: 'Raleway', sans-serif;  
+      font-size: 25px;
+      text-align: center;
+  }
+.me{
+    text-align: justify;
+    text-indent: 0px;
+}
+span{
+    text-align:right;
+}
+.text1{
+    text-decoration: none;
+    color: darkorange;
+}
+

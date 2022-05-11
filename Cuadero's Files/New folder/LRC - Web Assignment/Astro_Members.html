@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: 'Raleway', sans-serif;   
+   padding: 0px;
+    background-color: #fff;
+    margin:0%;
+    color: black ;
+}
+h1{
+font-family: 'Nunito', sans-serif;
+text-align: center;
+color: #362b58;
+
+
+}
+h2{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 3px;
+
+}
+.tab {
+  overflow: hidden;
+  margin:0px;
+}
+.tab button {
+  background-color: #e7e4df9d;
+  cursor: pointer;
+  padding: 0px 0px;
+  transition: 0.3s;
+  border-radius: 4px;
+  
+}
+.tab button:hover {
+  background-color: rgba(148, 235, 97, 0.856);
+  transition-delay: 3s;
+  box-shadow: 0 12px 16px 0 #E8DAEF;
+
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 3vh;
+  background-color: #E8DAEF;
+  margin:  0vh 12vh  5vh 12vh ;
+  border-radius: 15px;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 1px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #E8DAEF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 15px);
+    height: calc(100% + 350px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #E8DAEF;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #E8DAEF;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.img1{
+  border-radius: 25px;
+}
+.content1{
+  text-decoration: none;  
+}
+.tabcontent1{
+  background-color: #e7e4df9d;
+  border-radius: 0px;
+  margin:  0vh 13vh 0vh 13vh;
+
+
+}
+.con{
+  background-color: #e7e4df9d;
+  height: 300px;
+  margin-top: 0%;
+}
+q{
+  font-family:'Raleway', sans-serif;
+    color: #8866EA;
+   
+}
+p{
+  text-align: justify;
+}
+b{
+  text-align: center;
+  font-family:'Raleway', sans-serif;
+  color: #362b58;
+}
+.img2{
+  border-radius: 13px;
+}
+.con1{
+  background-color: #e7e4df9d;
+  padding: 3vh;
+  margin-top: 39px;
+  margin-bottom: 0%;
+  color: #362b58;
+
+}
+.img4{
+  margin-top: 0%;
+}
+.v{
+  text-align: left;
+}
+</style>
+</head>
+<body> 
+    <h1 class="con"><a href="https://open.spotify.com/artist/4pz4uzOMpJQyV8UTsDy4H8#login"><img src="astro2.png" width="20%"></a></h1>
+    <center>
+<div class="tab"><center>
+  <br>
+  <button class="glow-on-hover" type="button" class="tabL" onclick="Tabss(event, 'Tab 1')"><img class="img1" src="astro111.jpg" alt="Cha Eun" height="300px" width="210px" />
+  </button>
+  <button class="glow-on-hover" type="button" class="tabL" onclick="Tabss(event, 'Tab 2')"><img class="img1" src="rocky.jpg" alt="rocky"  height="300px" width="210px" />
+  </button>
+  <button class="glow-on-hover" type="button" class="tabL" onclick="Tabss(event, 'Tab 3')"><img class="img1" src="jinjin.jpg" alt="jinjin"  height="300px" width="210px"/>
+  </button>
+  <button class="glow-on-hover" type="button"  class="tabL" onclick="Tabss(event, 'Tab 4')"><img class="img1" src="min.jpg" alt="Moonbin"  height="300px" width="210px"/>
+  </button>
+  <button class="glow-on-hover" type="button"class="tabL" onclick="Tabss(event, 'Tab 5')"><img class="img1" src="sanha.jpg" alt="sanha"  height="300px" width="210px"/>
+  </button>
+  <button class="glow-on-hover" type="button" class="tabL" onclick="Tabss(event, 'Tab 6')"><img  class="img1" src="mj.jpg" alt="mj"  height="300px" width="210px"/>
+  </button></center>
+</div>
+
+<div id="Tab 1" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+  <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=w_0cZhopcI8">Cha Eunwoo</a></b></h2>
+  <img class= "img2" src="cha1.jpg" height="200px" width="150px">
+  <img class= "img2" src="cha2.jpg" height="200px" width="150px">
+  <img class= "img2" src="cha3.jpg" height="200px" width="120px">
+  <img class= "img2" src="cha4.jpg" height="200px" width="150px">
+  <img class= "img2" src="cha5.jpg" height="200px" width="150px">
+  <img class= "img2" src="cha6.png" height="200px" width="130px">
+  <img class= "img2" src="cha7.jpg" height="200px" width="150px">
+  <img class= "img2" src="cha8.jpg" height="200px" width="120px"></center>
+
+  <ul class="v" >
+      <li>Birth Name: Lee Dong Min</li>
+      <li>Stage Name: Cha Eunwoo</li>
+      <li>Position: Vocalist, Visual</li>
+      <li>Birthday: March 30th, 1997</li>
+      <li>Blood Type: B</li>
+  </ul>
+  <p>Eunwoo was born in Gunpo, Gyeonggi, South Korea. He has a younger brother who is studying in China. He is considered as a morning bird since he always wake up early and wake the rest of the members up. As the visual of the group, he is so handsome that people starts calling him “Face Genius”, which is someone who is crazily so handsome. His nickname “White Tee Guy”, because he always wore white t-shirts during Breathless era. He said if he could not be a singer, he wanted to be a teacher, docter, or maybe an anchor.</p>
+</div>
+
+<div id="Tab 2" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+        <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=d2_d0FTFzOg">Rocky</a></b></h2>
+        <img class= "img2" src="rock1.png" height="200px" width="160px">
+        <img  class= "img2" src="rock2.png" height="200px" width="150px">
+        <img  class= "img2"src="rock3.jpg" height="200px" width="150px">
+        <img class= "img2" src="rock4.jpg" height="200px" width="150px">
+        <img class= "img2" src="rock5.jpg" height="200px" width="150px">
+        <img class= "img2" src="rock6.jpg" height="200px" width="140px">
+        <img class= "img2" src="rock7.jpg" height="200px" width="120px">
+        <img class= "img2" src="rock8.jpg" height="200px" width="120px"></center>
+
+        <ul class="v">
+            <li>Birth Name: Park Min-hyuk</li>
+            <li>Stage Name: Rocky</li>
+            <li>Position: Main Dancer, Lead Rapper, Vocalist</li>
+            <li>Birthday: February 25th, 1999</li>
+            <li>Blood Type: O</li>
+        </ul>
+        <p>Rocky was born in Jinju, South Korea. Being so talented in dancing, the Fantagio staff began to call him “Dancing Machine”. The other Astro members described him as a quiet, very reliable and hardworking person.He was the first trainee who was officially introduced with Photo Test Cut. He said that if he could not be a singer, he wanted to be a dance teacher. Not only talented in dancing, Rocky is also talented in Taekwondo, he now holds the black belt now. It is also revealed that he has a very big appetite. He loves cooking, so the other Astro members often call him Chef Minhyuk.</p>
+</div>
+
+<div id="Tab 3" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+
+        <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=dtW9Xm7Tdlc">Jinjin</a></b></h2>
+        <img class= "img2"src="jin1.png" height="200px" width="130px">
+        <img class= "img2" src="jin2.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin3.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin4.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin5.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin6.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin7.jpg" height="200px" width="120px">
+        <img class= "img2" src="jin8.jpg" height="200px" width="150px"></center>
+
+        <ul class="v">
+            <li>Birth Name: Park Jin Woo
+            <li>Stage Name: JinJin</li>
+            <li>Position: Leader, Main Rapper</li>  
+            <li> Birthday: March 15th, 1996</li>  
+            <li>Blood Type: A</li>
+        </ul>
+        <p>JinJin was born in Ilsan, Gyeonggi-do, South Korea. Being a native Korean speaker, he is not only fluent in his mother language, but also in English and can speak a little Chinese. Among all Astro members, he and Eunwoo are the best English speaker. He is often called the Slow Rapper, because he taks very slow. He attended Hanlim Multi Arts High School and NY Dance Academy in Ilsan, before finally joining Fandagio as a trainee.</p>
+</div>
+
+<div id="Tab 4" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+
+        <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=gnEOsAwDsRo">Moonbin</a></b></h2>
+        <img class= "img2" src="bin.jpg" height="200px" width="130px">
+        <img class= "img2" src="jin8.jpg" height="200px" width="150px">
+        <img class= "img2" src="bin1.jpg" height="200px" width="150px">
+        <img class= "img2" src="bin3.jpg" height="200px" width="150px">
+        <img class= "img2" src="bin4.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin6.jpg" height="200px" width="150px">
+        <img class= "img2" src="jin7.jpg" height="200px" width="120px">
+        <img class= "img2" src="jin8.jpg" height="200px" width="150px"></center>
+
+        <ul class="v">
+            <li>Birth Name: Moon Bin
+            <li>Stage Name: Moonbin</li>
+            <li>Position: Lead Vocalist, Lead Dancer</li>
+            <li>Birthday: January 26th, 1998</li>
+            <li>Blood Type: B</li>
+        </ul>
+        <p>Moonbin was born in Cheongju, South Korea. He has a younger sister named Moon Soo A, who is a trainee in YG Entertainment, a home for several well-known boy and girl groups like PRISTIN and iKON. When he was younger, he used to be a child model and actor. He used to be Samsung’s model in his childhood. In 2009, he appeared in drama “Boys Over Flower” as the young So Yijeong, who was portrayed by Kimbum. And then in 2012, he enterd Fantagio iTeen’s Audition.</p>
+      </div>
+<div id="Tab 5" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+
+        <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=uutM401ofOw">Sanha</a></b></h2>
+        <img class= "img2" src="san1.jpg" height="200px" width="130px">
+        <img class= "img2" src="san2.jpg" height="200px" width="160px">
+        <img class= "img2" src="san3.jpg" height="200px" width="150px">
+        <img class= "img2" src="san4.jpg" height="200px" width="150px">
+        <img class= "img2" src="sanha.jpg" height="200px" width="150px">
+        <img class= "img2" src="bin.jpg" height="200px" width="150px">
+        <img class= "img2" src="bin1.jpg" height="200px" width="120px">
+        <img class= "img2" src="bin3.jpg" height="200px" width="150px"></center>
+
+        <ul class="v">
+            <li>Birth Name: Yoon San-ha</li>
+            <li>tage Name: Sanha</li>
+            <li>Position: Vocalist, Maknae</li>
+            <li>Birthday: March 21th, 2000</li>
+            <li>Blood Type: AB</li>
+        </ul>
+        <p>Sanha was born in Seoul, South Korea to a Christian family. He has three older brothers. Being the youngest in the family, Sanha really likes to bully his hyung a lot. Since he was younger, he was already into music. He learned to play guitar from his father and brothers. Then, he attended A-Sound Music Academy, and studied vocal. But however, he also managed to master guitar in only 8 months. He said if he was not a Kpop singer, he wanted to be guitarist.</p>
+</div>
+<div id="Tab 6" class="tabcontent">
+  <center><h1><b>Astro Members Profile of Fantiago Shows</b></h1>
+    <img src="astro5.gif" width="3%">
+
+        <h2><b><a class ="content1" href="https://www.youtube.com/watch?v=AaFa9PcCvsU">MJ</a></b></h2>
+        <img class= "img2" src="mm.jpg" height="200px" width="130px">
+        <img class= "img2" src="mj4.jpg" height="200px" width="150px">
+        <img class= "img2" src="min.jpg" height="200px" width="150px">
+        <img class= "img2" src="mj3.jpg" height="200px" width="150px">
+        <img class= "img2" src="m4.jpg" height="200px" width="150px">
+        <img class= "img2" src="mjj.jpg" height="200px" width="150px">
+        <img class= "img2" src="mjj1.jpg" height="200px" width="120px">
+        <img class= "img2" src="mk.jpg" height="200px" width="150px"></center>
+
+        <ul class="v">
+            <li>Birth Name: Kim Myung Jun</li>
+            <li>Stage Name: MJ</li>
+            <li>Position: Main Vocalist</li>
+            <li>Birthday: March 5th, 1994</li>
+            <li>Blood Type: O</li> 
+
+        </ul>
+        <p>MJ was born in Suwon, Gyeonggi, South Korea. Before joining Fantagio, he went to JPY Entertainment audition, and got one year scholarship from Seoul National University. JPY Entertainment is a home for numorous famous idols like Stray Kids, and Day6. And then, he appeared in Fantagio Web Drama entitled “To Be Continued” in 2015.</p>
+ </div>
+ <div class="con1"> <h1><b>We Wanna Be Your Star!<br> <img src="astro5.gif" width="5%">   <img src="astro5.gif" width="5%">   <img src="astro5.gif" width="5%">   <img src="astro5.gif" width="5%">   <img src="astro5.gif" width="5%">   <img src="astro5.gif" width="5%"></b></h1></div>
+<script>
+function Tabss(evt, cityName) {
+  var i, tabcontent, tabL;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tabL = document.getElementsByClassName("tabL");
+  for (i = 0; i < tabL.length; i++) {
+    tabL[i].className = tabL[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

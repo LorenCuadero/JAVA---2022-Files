@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css\home.css" />
+    <title>Emall - Elizabeth Mall</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- </header>style="background-image: url('cover.jpg')"> -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="home.html" class="brand"><img class="img1" src="emall1.png"></a>
+                <div class="banner">
+
+                    <form>
+                        <input type="text" class="search-input" placeholder="Search . . .">
+                        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                    </form>
+                    <!-- <div class="navbar-nav">
+            <a class="active" href="#">HOME</a>
+            <a href="#content">CONTENT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+        </div> -->
+                </div>
+                <div class="active1">
+                    <a class="active11" href="login.html">Login</a>
+                    <a class="active11" href="#contact">|</a>
+                    <a class="active11" href="signup.html">Sign Up</a><br>
+                    <a><img class="img2" src="cart.png"></a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div>
+            <!-- <div class="header_a">
+
+                <section>
+
+                    <img class="mySlides" src="matebanner2.jpg" style="width:100%">
+                    <img class="mySlides" src="fam.jpg" style="width:100%">
+                </section>
+
+                <script>
+                    // Automatic Slideshow - change <img src="" every 3 seconds
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2000);
+                    }
+                </script>
+
+            </div> -->
+    </header>
+
+
+    <!-- <div class="container11">
+        <img class="container_a" src="promo1.jpg">
+        <img class="container_a" src="promo2.jpg">
+        <img class="container_a" src="promo3.jpg">
+        <img class="container_a" src="promo4.jpg">
+        <img class="container_a" src="promo5.jpg"> -->
+    <div class="gallery">
+        <div class="gallery-item item-3x4">
+            <img class="thumb placeholder" id="imga" src="promo1.jpg" data-src="promo1.jpg" data-image="promo1.jpg"
+                data-title="Photo by Daniel J. Schwarz (1)" alt="Photo by Daniel J. Schwarz">
+            <div class="caption"><span>Up to 50% off Discount With SMART!</span></div>
+        </div>
+        <div class="gallery-item item-3x4">
+            <img class="thumb placeholder" id="imga" src="promo2.jpg" data-src="promo2.jpg" data-image="promo2.jpg"
+                data-title="Photo by Daniel J. Schwarz (2)" alt="Photo by Daniel J. Schwarz">
+            <div class="caption"><span>Save Up to P100 with your Grocery items! </span></div>
+        </div>
+        <div class="gallery-item item-3x4">
+            <img class="thumb placeholder" id="imga" src="promo3.jpg" data-src="promo3.jpg" data-image="promo3.jpg"
+                data-title="Photo by Daniel J. Schwarz (3)" alt="Photo by Daniel J. Schwarz">
+            <div class="caption"><span>Grab your own free Ticket now!</span></div>
+        </div>
+        <div class="gallery-item item-3x4">
+            <img class="thumb placeholder" id="imga" src="promo4.jpg" data-src="promo4.jpg" data-image="promo4.jpg"
+                data-title="Photo by Daniel J. Schwarz (4)" alt="Photo by Daniel J. Schwarz">
+            <div class="caption"><span>Buy 2 products plus 1 free!</span></div>
+        </div>
+        <div class="gallery-item item-3x4">
+            <img class="thumb placeholder" id="imga" src="promo5.jpg" data-src="promo5.jpg" data-image="promo5.jpg"
+                data-title="Photo by Daniel J. Schwarz (5)" alt="Photo by Daniel J. Schwarz">
+            <div class="caption"><span>Purchase new Home Decors for as low as P800 </span></div>
+        </div>
+    </div>
+
+    <h2>Categories</h2>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('apparels')"> Apparels</button>
+        <button class="btn" onclick="filterSelection('food')">Food</button>
+        <button class="btn" onclick="filterSelection('homies')">Home Accessories</button>
+        <button class="btn" onclick="filterSelection('school')">School Materials</button>
+        <button class="btn" onclick="filterSelection('health')">Beauty and Health</button>
+
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    
+        <div class="row">
+            <div class="column apparels">
+                <div class="content">
+                    <img class="img3" src="neww.jpg" alt="Mountains" style="width:100%">
+                    <h4>Men's Apparel</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column apparels">
+                <div class="content">
+                    <img class="img3" src="women1.jpg" alt="Lights" style="width:100%">
+                    <h4>Women's Apparel</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column apparels">
+                <div class="content">
+                    <img class="img3" src="kids.jpg" alt="apparels" style="width:100%">
+                    <h4>Kids's Apparel</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column apparels">
+                <div class="content">
+                    <img class="img3" src="sport.jpg" alt="Car" style="width:100%">
+                    <h4>Sport's Wear</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column food">
+                <div class="content">
+                    <img class="img3" src="food.jpg" alt="Mountains" style="width:100%">
+                    <h4>Food Products</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column food">
+                <div class="content">
+                    <img class="img3" src="grocery.jpg" alt="Lights" style="width:100%">
+                    <h4>Assorted Groceries</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column homies">
+                <div class="content">
+                    <img class="img3" src="home.jpg" alt="apparels" style="width:100%">
+                    <h4>Home Decorations</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column homies">
+                <div class="content">
+                    <img class="img3" src="gadget.png" alt="apparels" style="width:100%">
+                    <h4>Hardware Items</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column homies">
+                <div class="content">
+                    <img class="img3" src="home_app.jpg" alt="Car" style="width:100%">
+                    <h4>Home Appliances</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column homies">
+                <div class="content">
+                    <img class="img3" src="home_ent.jpg" alt="Car" style="width:100%">
+                    <h4>Home Entertainments</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column health">
+                <div class="content">
+                    <img class="img3" src="health.jpg" alt="Car" style="width:100%">
+                    <h4>Health and Personal Hygiene</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column health">
+                <div class="content">
+                    <img class="img3" src="cos.jpg" alt="Car" style="width:100%">
+                    <h4>Cosmetics</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column health">
+                <div class="content">
+                    <img class="img3" src="med.jpg" alt="Car" style="width:100%">
+                    <h4>Medicines and Multi-vitamins</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column health">
+                <div class="content">
+                    <img class="img3" src="hyg.jpg" alt="Car" style="width:100%">
+                    <h4>Personal Hygiene Items</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column school">
+                <div class="content">
+                    <img class="img3" src="school.jfif" alt="Car" style="width:100%">
+                    <h4>School Supplies</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column school">
+                <div class="content">
+                    <img class="img3" src="gadgets.png" alt="Car" style="width:100%">
+                    <h4>Gadgets</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column school">
+                <div class="content">
+                    <img class="img3" src="unif.jpg" alt="Car" style="width:100%">
+                    <h4>School Uniforms</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column school">
+                <div class="content">
+                    <img class="img3" src="tab.jpg" alt="Car" style="width:100%">
+                    <h4>educational Sets</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column food">
+                <div class="content">
+                    <img class="img3" src="snack.jpg" alt="Lights" style="width:100%">
+                    <h4>Snacks</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column food">
+                <div class="content">
+                    <img class="img3" src="drinks.jpg" alt="Lights" style="width:100%">
+                    <h4>Drinks</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="img3" src="camp.jpg" alt="Lights" style="width:100%">
+                    <h4>Outdoor Materials</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="img3" src="light.png" alt="Lights" style="width:100%">
+                    <h4>Hardware Tools</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="img3" src="toys.jpg" alt="Lights" style="width:100%">
+                    <h4>Toys</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="img3" src="sport_mat.jpg" alt="Lights" style="width:100%">
+                    <h4>Sports Materials</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <!-- END GRID -->
+        </div>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <br>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <span id="end">Copyright &copy; 2021 By J. Rey Calesa</span>
+    </footer>
+</body>
+
+</html>

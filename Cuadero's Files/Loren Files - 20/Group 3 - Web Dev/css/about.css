@@ -1,0 +1,245 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    position: static;
+}
+
+body, html {
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 16px 10px;
+    background-color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+/*HEADER*/
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.navbar {
+    padding: 1.2rem;
+    position: sticky;
+}
+.brand {
+    color: #400000;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar-nav {
+    padding: 1rem 0;
+    text-align: center;
+}
+.navbar-nav a {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #400000;
+    text-decoration: none;
+    display: inline-block;
+    padding:0.5rem 1rem;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover {
+    color:white;
+}
+.back {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.backs {
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    text-align: center;
+    color: black;
+}
+.caption {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+#description{
+    padding: 15px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    background-color: #ee4d2d;
+    display: inline-block;
+    padding: 10px;
+    border: none;
+}
+.button{
+    border-radius: 5px;
+}
+.button:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    box-shadow: 5px 5px gold;
+    transition: box-shadow .5s;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: none;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
+.about-container {
+    padding: 10px;
+    margin: 15px;
+}
+.containers {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: none;
+}
+footer {
+    color: #400000;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.social-links a {
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.5s ease;
+    transition: transform 1s;
+}
+
+.social-links a:hover {
+    background: #ffee75;
+    transform: rotate(360deg);
+}
+
+.footer span {
+    margin-top: 1rem;
+    display: block;
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 360px){
+    .blog-container {
+        margin: 0;
+        padding: 10px;
+    }
+    .blog-item {
+        margin: 0;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .blog-box {
+        width: 250px;
+        height: 400px;
+        background-color: #ffffff;
+        border: 1px solid #ececec;
+        margin: 20px 20px;
+    }
+    .blog-img img {
+        width: auto;
+        height: 150px;
+        transition: all 0.5 ease;
+        position: relative;
+    }
+    .blog-text {
+        padding: 10px;
+    }
+    .blog-text span {
+        font-size: 0.5rem;
+    }
+    .blog-text .blog-title {
+        font-size: 1rem;
+    }
+    .blog-text p {
+        font-size: 0.75rem;
+    }
+    .blog-text a {
+        font-size: 0.75rem;
+    }
+}
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}

@@ -1,0 +1,203 @@
+body {
+  font-family:'Raleway', sans-serif;  
+    background: #f1f1f1;
+  margin:0%;
+  
+}
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    height: 6%;
+    font-family:'Raleway', sans-serif;  
+    background-color: rgba(92, 76, 76, 0.424);
+}
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: rgba(233, 194, 68, 0.568);
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #00a70e;
+  }
+  
+  }
+  @media screen and (max-width: 800px) {
+    .navbar{
+      width:100%;
+      padding: 0px;
+      float: left;
+      margin: 0%;
+    }
+  }
+
+/* Header/Blog Title */
+.header {
+  padding: 15px;
+  width: 100%;
+  margin: 0%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: right;
+  width: 73%;
+  margin: 0%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  margin: 0%;
+  margin-top: 0%;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgba(236, 208, 156, 0.418);
+  padding: 40px;
+  margin-top: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:rgba(66, 61, 61, 0.534);
+  width: 100%;
+  margin-top: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0px;
+}
+.foot{
+    color: orangered;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.text2{
+    font-size: 16px;
+    margin-left: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    margin-right: 10px;
+    font-family:'Raleway', sans-serif;  
+    color: rgb(148, 85, 8);
+    text-decoration: none;
+  
+  }
+  p{
+      text-align: justify;
+
+  }
+.text{
+  text-align: justify;
+}
+  h2{
+      color: rgb(156, 88, 4);
+      font-family:'Raleway', sans-serif;  
+      font-size: 25px;
+      text-align: center;
+  }
+.me{
+    text-align: justify;
+    text-indent: 0px;
+}
+span{
+    text-align:right;
+}
+.text1{
+    text-decoration: none;
+    color: darkorange;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }

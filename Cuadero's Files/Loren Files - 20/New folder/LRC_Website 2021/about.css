@@ -1,0 +1,74 @@
+
+body{
+  background-image: url(original.jpg);
+  margin: 0px;
+  background-size: cover;
+  background-repeat:no-repeat ;
+}
+}
+.USC{
+    color: #000;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 40PX;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: rgb(53, 104, 185);
+  overflow: auto;
+  height: 6%;
+  position: fixed;
+}
+
+/* Navbar links */
+.navbar a {
+  float:right;
+  text-align: center;
+  padding: 10px;
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: rgb(67, 110, 180) transparent;
+  background: #ddd;
+  color: black;
+}
+
+/* Current/active navbar link */
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.about{
+  padding: 10px;
+  float: left;
+  font-family: Arial;
+  margin-top: 30px;
+  color: #000;
+  text-align: center;
+}
+.about1{
+  padding: 5px;
+  float: right;
+  font-family: Arial;
+  color: #000;
+  text-align:justify;
+  width: 600px;
+  height: 200px;
+  margin-top: 150px;
+  margin-right: 20px;
+  font-size: 19px;
+  text-indent: 50px;
+}

@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    position: static;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 2 0.5rem;
+    background-color: transparent;
+    
+}
+a {
+    color: black;
+}
+span.psw {
+    float: right;
+    padding-top: 5px;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+ 
+  span.psw:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f9cc2b enrod;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  span.psw:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+span.sign-up {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.containers {
+    text-align: center;
+}
+.container1 {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 8 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 32px;
+    color: #400000;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    padding: 9px 7px;
+    border-radius: 10px;
+}
+h3 {
+    font-size: 25px;
+}
+
+
+/*HEADER*/
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    background-color:  #f9cc2b   ;
+}
+.img1 {
+    width: 50%;
+    display: block;
+    border-radius: 7%;
+    height: 50%;
+
+}
+.img2{
+    width: 100%;
+    display: block;
+    border-radius:0%;
+    height: 100%;
+
+
+}
+.navbar {
+    background-color:  #f9cc2b   ;
+    padding: 0.3rem;
+    position: -webkit-sticky;
+
+}
+.brand {
+    color: #400000;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar-nav {
+    padding: 1rem 0;
+    text-align: center;
+}
+.navbar-nav a {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #400000;
+    text-decoration: none;
+    display: inline-block;
+    padding:0.5rem 1rem;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover {
+    color:white;
+}
+.design {
+    padding: 4.5rem 0;
+    text-align: left;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px 8px;
+    background: #63c635    ;
+    color: white;
+    border: #f9cc2b;
+}
+button:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.cancelbtn {
+        width: auto;
+        padding: 9px 7px;
+        background: rgb(247, 37, 37);
+}
+.blog-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    margin: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#blog {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    position: relative;
+}
+.about{
+    padding: 2.5rem;
+}
+.about-text {
+    background-color: #f9cc2b8c ;
+    padding: 5px;
+    width: 500px;
+    padding: 20px;
+}
+.about-text:hover {
+    box-shadow: 10px 10px #f9cc2b ;
+    transition: box-shadow .5s;
+}
+
+#img-content {
+    border-radius: 10px;
+    background-color: white;
+}
+
+#img-content:hover {
+    box-shadow: 10px 10px #f9cc2b ;
+    transition: box-shadow .5s;
+}
+.about-content img {
+    width: 250px;
+}
+.about-text{
+    margin: 12px 10px;
+    border-radius: 10px;
+}
+.about-text p{
+    font-size: 1.25rem;
+    padding: 0.75rem 0 ;
+    opacity: 1;
+}
+.active, .a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(2, 2, 2);
+    border-radius: 25px;
+} 
+footer {
+    color: #400000;
+    text-align: center;
+    padding: 2rem 0;
+    background-color:  #f9cc2b   ;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background-color: #f9cc2b;
+}
+
+.social-links a {
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.5s ease;
+    transition: transform 1s;
+}
+
+.social-links a:hover {
+    background: #ffee75;
+    transform: rotate(360deg);
+}
+
+.footer span {
+    margin-top: 1rem;
+    display: block;
+    letter-spacing: 2px;
+    background-color: #f97916    ;
+}
+
+/* Media Queries */
+@media screen and (min-width: 360px){
+    .blog-container {
+        margin: 0;
+        padding: 10px;
+    }
+    .blog-item {
+        margin: 0;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .blog-box {
+        width: 250px;
+        height: 400px;
+        background-color: #ffffff;
+        border: 1px solid #ececec;
+        margin: 20px 20px;
+    }
+    .blog-img img {
+        width: auto;
+        height: 150px;
+        transition: all 0.5 ease;
+        position: relative;
+    }
+    .blog-text {
+        padding: 10px;
+    }
+    .blog-text span {
+        font-size: 0.5rem;
+    }
+    .blog-text .blog-title {
+        font-size: 1rem;
+    }
+    .blog-text p {
+        font-size: 0.75rem;
+    }
+    .blog-text a {
+        font-size: 0.75rem;
+    }
+}
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
